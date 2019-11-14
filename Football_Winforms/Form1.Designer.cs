@@ -31,42 +31,42 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.matchupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.firstToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.secondToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.thirdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.fourthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.completeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playsToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.gameStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hometeamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.awayteamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.teamselect_groupbox = new System.Windows.Forms.GroupBox();
             this.away_combo = new System.Windows.Forms.ComboBox();
             this.home_combo = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.homelabel = new System.Windows.Forms.Label();
+            this.away_label = new System.Windows.Forms.Label();
+            this.home_label = new System.Windows.Forms.Label();
             this.coinflip_groupbox = new System.Windows.Forms.GroupBox();
             this.tails_radio = new System.Windows.Forms.RadioButton();
             this.heads_radio = new System.Windows.Forms.RadioButton();
             this.visitorselects_label = new System.Windows.Forms.Label();
             this.flip_button = new System.Windows.Forms.Button();
-            this.kickoff_button = new System.Windows.Forms.Button();
             this.coinflipresult_group = new System.Windows.Forms.GroupBox();
+            this.flipresult_label = new System.Windows.Forms.Label();
+            this.winnerselect_group = new System.Windows.Forms.GroupBox();
+            this.winnerselect_label = new System.Windows.Forms.Label();
             this.defer_radio = new System.Windows.Forms.RadioButton();
             this.kickoff_radio = new System.Windows.Forms.RadioButton();
             this.receive_radio = new System.Windows.Forms.RadioButton();
-            this.winnerselect_group = new System.Windows.Forms.GroupBox();
-            this.winnerselect_label = new System.Windows.Forms.Label();
-            this.flipresult_label = new System.Windows.Forms.Label();
-            this.playsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.playsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.statsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.playsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.statsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.playsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.statsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.playsToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.statsToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hometeamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.awayteamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kickoff_button = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.teamselect_groupbox.SuspendLayout();
@@ -104,8 +104,20 @@
             this.playsToolStripMenuItem,
             this.statsToolStripMenuItem});
             this.firstToolStripMenuItem.Name = "firstToolStripMenuItem";
-            this.firstToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.firstToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.firstToolStripMenuItem.Text = "First";
+            // 
+            // playsToolStripMenuItem
+            // 
+            this.playsToolStripMenuItem.Name = "playsToolStripMenuItem";
+            this.playsToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.playsToolStripMenuItem.Text = "Plays";
+            // 
+            // statsToolStripMenuItem
+            // 
+            this.statsToolStripMenuItem.Name = "statsToolStripMenuItem";
+            this.statsToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.statsToolStripMenuItem.Text = "Stats";
             // 
             // secondToolStripMenuItem
             // 
@@ -113,8 +125,20 @@
             this.playsToolStripMenuItem1,
             this.statsToolStripMenuItem1});
             this.secondToolStripMenuItem.Name = "secondToolStripMenuItem";
-            this.secondToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.secondToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.secondToolStripMenuItem.Text = "Second";
+            // 
+            // playsToolStripMenuItem1
+            // 
+            this.playsToolStripMenuItem1.Name = "playsToolStripMenuItem1";
+            this.playsToolStripMenuItem1.Size = new System.Drawing.Size(101, 22);
+            this.playsToolStripMenuItem1.Text = "Plays";
+            // 
+            // statsToolStripMenuItem1
+            // 
+            this.statsToolStripMenuItem1.Name = "statsToolStripMenuItem1";
+            this.statsToolStripMenuItem1.Size = new System.Drawing.Size(101, 22);
+            this.statsToolStripMenuItem1.Text = "Stats";
             // 
             // thirdToolStripMenuItem
             // 
@@ -122,8 +146,20 @@
             this.playsToolStripMenuItem2,
             this.statsToolStripMenuItem2});
             this.thirdToolStripMenuItem.Name = "thirdToolStripMenuItem";
-            this.thirdToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thirdToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.thirdToolStripMenuItem.Text = "Third";
+            // 
+            // playsToolStripMenuItem2
+            // 
+            this.playsToolStripMenuItem2.Name = "playsToolStripMenuItem2";
+            this.playsToolStripMenuItem2.Size = new System.Drawing.Size(101, 22);
+            this.playsToolStripMenuItem2.Text = "Plays";
+            // 
+            // statsToolStripMenuItem2
+            // 
+            this.statsToolStripMenuItem2.Name = "statsToolStripMenuItem2";
+            this.statsToolStripMenuItem2.Size = new System.Drawing.Size(101, 22);
+            this.statsToolStripMenuItem2.Text = "Stats";
             // 
             // fourthToolStripMenuItem
             // 
@@ -131,8 +167,20 @@
             this.playsToolStripMenuItem3,
             this.statsToolStripMenuItem3});
             this.fourthToolStripMenuItem.Name = "fourthToolStripMenuItem";
-            this.fourthToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fourthToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.fourthToolStripMenuItem.Text = "Fourth";
+            // 
+            // playsToolStripMenuItem3
+            // 
+            this.playsToolStripMenuItem3.Name = "playsToolStripMenuItem3";
+            this.playsToolStripMenuItem3.Size = new System.Drawing.Size(101, 22);
+            this.playsToolStripMenuItem3.Text = "Plays";
+            // 
+            // statsToolStripMenuItem3
+            // 
+            this.statsToolStripMenuItem3.Name = "statsToolStripMenuItem3";
+            this.statsToolStripMenuItem3.Size = new System.Drawing.Size(101, 22);
+            this.statsToolStripMenuItem3.Text = "Stats";
             // 
             // completeToolStripMenuItem
             // 
@@ -140,8 +188,20 @@
             this.playsToolStripMenuItem4,
             this.statsToolStripMenuItem4});
             this.completeToolStripMenuItem.Name = "completeToolStripMenuItem";
-            this.completeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.completeToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.completeToolStripMenuItem.Text = "Complete";
+            // 
+            // playsToolStripMenuItem4
+            // 
+            this.playsToolStripMenuItem4.Name = "playsToolStripMenuItem4";
+            this.playsToolStripMenuItem4.Size = new System.Drawing.Size(101, 22);
+            this.playsToolStripMenuItem4.Text = "Plays";
+            // 
+            // statsToolStripMenuItem4
+            // 
+            this.statsToolStripMenuItem4.Name = "statsToolStripMenuItem4";
+            this.statsToolStripMenuItem4.Size = new System.Drawing.Size(101, 22);
+            this.statsToolStripMenuItem4.Text = "Stats";
             // 
             // gameStatsToolStripMenuItem
             // 
@@ -149,8 +209,20 @@
             this.hometeamToolStripMenuItem,
             this.awayteamToolStripMenuItem});
             this.gameStatsToolStripMenuItem.Name = "gameStatsToolStripMenuItem";
-            this.gameStatsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gameStatsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.gameStatsToolStripMenuItem.Text = "Game Stats";
+            // 
+            // hometeamToolStripMenuItem
+            // 
+            this.hometeamToolStripMenuItem.Name = "hometeamToolStripMenuItem";
+            this.hometeamToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.hometeamToolStripMenuItem.Text = "Home Team";
+            // 
+            // awayteamToolStripMenuItem
+            // 
+            this.awayteamToolStripMenuItem.Name = "awayteamToolStripMenuItem";
+            this.awayteamToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.awayteamToolStripMenuItem.Text = "Away Team";
             // 
             // tableLayoutPanel1
             // 
@@ -183,8 +255,8 @@
             this.tableLayoutPanel1.SetColumnSpan(this.teamselect_groupbox, 2);
             this.teamselect_groupbox.Controls.Add(this.away_combo);
             this.teamselect_groupbox.Controls.Add(this.home_combo);
-            this.teamselect_groupbox.Controls.Add(this.label2);
-            this.teamselect_groupbox.Controls.Add(this.homelabel);
+            this.teamselect_groupbox.Controls.Add(this.away_label);
+            this.teamselect_groupbox.Controls.Add(this.home_label);
             this.teamselect_groupbox.Location = new System.Drawing.Point(3, 3);
             this.teamselect_groupbox.Name = "teamselect_groupbox";
             this.tableLayoutPanel1.SetRowSpan(this.teamselect_groupbox, 2);
@@ -215,25 +287,25 @@
             this.home_combo.Text = "Home Team";
             this.home_combo.SelectedIndexChanged += new System.EventHandler(this.home_combo_SelectedIndexChanged);
             // 
-            // label2
+            // away_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(90, 92);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Away Team";
+            this.away_label.AutoSize = true;
+            this.away_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.away_label.Location = new System.Drawing.Point(90, 92);
+            this.away_label.Name = "away_label";
+            this.away_label.Size = new System.Drawing.Size(91, 20);
+            this.away_label.TabIndex = 1;
+            this.away_label.Text = "Away Team";
             // 
-            // homelabel
+            // home_label
             // 
-            this.homelabel.AutoSize = true;
-            this.homelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homelabel.Location = new System.Drawing.Point(85, 58);
-            this.homelabel.Name = "homelabel";
-            this.homelabel.Size = new System.Drawing.Size(96, 20);
-            this.homelabel.TabIndex = 0;
-            this.homelabel.Text = "Home Team";
+            this.home_label.AutoSize = true;
+            this.home_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_label.Location = new System.Drawing.Point(85, 58);
+            this.home_label.Name = "home_label";
+            this.home_label.Size = new System.Drawing.Size(96, 20);
+            this.home_label.TabIndex = 0;
+            this.home_label.Text = "Home Team";
             // 
             // coinflip_groupbox
             // 
@@ -297,18 +369,6 @@
             this.flip_button.UseVisualStyleBackColor = true;
             this.flip_button.Click += new System.EventHandler(this.flip_button_Click);
             // 
-            // kickoff_button
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.kickoff_button, 2);
-            this.kickoff_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kickoff_button.Location = new System.Drawing.Point(203, 403);
-            this.kickoff_button.Name = "kickoff_button";
-            this.kickoff_button.Size = new System.Drawing.Size(394, 30);
-            this.kickoff_button.TabIndex = 3;
-            this.kickoff_button.Text = "Kickoff";
-            this.kickoff_button.UseVisualStyleBackColor = true;
-            this.kickoff_button.Visible = false;
-            // 
             // coinflipresult_group
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.coinflipresult_group, 2);
@@ -321,6 +381,42 @@
             this.coinflipresult_group.TabStop = false;
             this.coinflipresult_group.Text = "Coin Flip Result";
             this.coinflipresult_group.Visible = false;
+            // 
+            // flipresult_label
+            // 
+            this.flipresult_label.AutoSize = true;
+            this.flipresult_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flipresult_label.Location = new System.Drawing.Point(41, 72);
+            this.flipresult_label.Name = "flipresult_label";
+            this.flipresult_label.Size = new System.Drawing.Size(185, 20);
+            this.flipresult_label.TabIndex = 0;
+            this.flipresult_label.Text = "The coin lands on heads.";
+            // 
+            // winnerselect_group
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.winnerselect_group, 2);
+            this.winnerselect_group.Controls.Add(this.winnerselect_label);
+            this.winnerselect_group.Controls.Add(this.defer_radio);
+            this.winnerselect_group.Controls.Add(this.kickoff_radio);
+            this.winnerselect_group.Controls.Add(this.receive_radio);
+            this.winnerselect_group.Location = new System.Drawing.Point(403, 221);
+            this.winnerselect_group.Name = "winnerselect_group";
+            this.tableLayoutPanel1.SetRowSpan(this.winnerselect_group, 2);
+            this.winnerselect_group.Size = new System.Drawing.Size(394, 176);
+            this.winnerselect_group.TabIndex = 5;
+            this.winnerselect_group.TabStop = false;
+            this.winnerselect_group.Text = "Winner Selection";
+            this.winnerselect_group.Visible = false;
+            // 
+            // winnerselect_label
+            // 
+            this.winnerselect_label.AutoSize = true;
+            this.winnerselect_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winnerselect_label.Location = new System.Drawing.Point(26, 72);
+            this.winnerselect_label.Name = "winnerselect_label";
+            this.winnerselect_label.Size = new System.Drawing.Size(144, 20);
+            this.winnerselect_label.TabIndex = 3;
+            this.winnerselect_label.Text = "Buccaneers select:";
             // 
             // defer_radio
             // 
@@ -358,113 +454,18 @@
             this.receive_radio.Text = "Receive";
             this.receive_radio.UseVisualStyleBackColor = true;
             // 
-            // winnerselect_group
+            // kickoff_button
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.winnerselect_group, 2);
-            this.winnerselect_group.Controls.Add(this.winnerselect_label);
-            this.winnerselect_group.Controls.Add(this.defer_radio);
-            this.winnerselect_group.Controls.Add(this.kickoff_radio);
-            this.winnerselect_group.Controls.Add(this.receive_radio);
-            this.winnerselect_group.Location = new System.Drawing.Point(403, 221);
-            this.winnerselect_group.Name = "winnerselect_group";
-            this.tableLayoutPanel1.SetRowSpan(this.winnerselect_group, 2);
-            this.winnerselect_group.Size = new System.Drawing.Size(394, 176);
-            this.winnerselect_group.TabIndex = 5;
-            this.winnerselect_group.TabStop = false;
-            this.winnerselect_group.Text = "Winner Selection";
-            this.winnerselect_group.Visible = false;
-            // 
-            // winnerselect_label
-            // 
-            this.winnerselect_label.AutoSize = true;
-            this.winnerselect_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winnerselect_label.Location = new System.Drawing.Point(26, 72);
-            this.winnerselect_label.Name = "winnerselect_label";
-            this.winnerselect_label.Size = new System.Drawing.Size(144, 20);
-            this.winnerselect_label.TabIndex = 3;
-            this.winnerselect_label.Text = "Buccaneers select:";
-            // 
-            // flipresult_label
-            // 
-            this.flipresult_label.AutoSize = true;
-            this.flipresult_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flipresult_label.Location = new System.Drawing.Point(41, 72);
-            this.flipresult_label.Name = "flipresult_label";
-            this.flipresult_label.Size = new System.Drawing.Size(185, 20);
-            this.flipresult_label.TabIndex = 0;
-            this.flipresult_label.Text = "The coin lands on heads.";
-            // 
-            // playsToolStripMenuItem
-            // 
-            this.playsToolStripMenuItem.Name = "playsToolStripMenuItem";
-            this.playsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.playsToolStripMenuItem.Text = "Plays";
-            // 
-            // statsToolStripMenuItem
-            // 
-            this.statsToolStripMenuItem.Name = "statsToolStripMenuItem";
-            this.statsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.statsToolStripMenuItem.Text = "Stats";
-            // 
-            // playsToolStripMenuItem1
-            // 
-            this.playsToolStripMenuItem1.Name = "playsToolStripMenuItem1";
-            this.playsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.playsToolStripMenuItem1.Text = "Plays";
-            // 
-            // statsToolStripMenuItem1
-            // 
-            this.statsToolStripMenuItem1.Name = "statsToolStripMenuItem1";
-            this.statsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.statsToolStripMenuItem1.Text = "Stats";
-            // 
-            // playsToolStripMenuItem2
-            // 
-            this.playsToolStripMenuItem2.Name = "playsToolStripMenuItem2";
-            this.playsToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.playsToolStripMenuItem2.Text = "Plays";
-            // 
-            // statsToolStripMenuItem2
-            // 
-            this.statsToolStripMenuItem2.Name = "statsToolStripMenuItem2";
-            this.statsToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.statsToolStripMenuItem2.Text = "Stats";
-            // 
-            // playsToolStripMenuItem3
-            // 
-            this.playsToolStripMenuItem3.Name = "playsToolStripMenuItem3";
-            this.playsToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.playsToolStripMenuItem3.Text = "Plays";
-            // 
-            // statsToolStripMenuItem3
-            // 
-            this.statsToolStripMenuItem3.Name = "statsToolStripMenuItem3";
-            this.statsToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.statsToolStripMenuItem3.Text = "Stats";
-            // 
-            // playsToolStripMenuItem4
-            // 
-            this.playsToolStripMenuItem4.Name = "playsToolStripMenuItem4";
-            this.playsToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.playsToolStripMenuItem4.Text = "Plays";
-            // 
-            // statsToolStripMenuItem4
-            // 
-            this.statsToolStripMenuItem4.Name = "statsToolStripMenuItem4";
-            this.statsToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.statsToolStripMenuItem4.Text = "Stats";
-            // 
-            // hometeamToolStripMenuItem
-            // 
-            this.hometeamToolStripMenuItem.Name = "hometeamToolStripMenuItem";
-            this.hometeamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.hometeamToolStripMenuItem.Text = "Home Team";
-            // 
-            // awayteamToolStripMenuItem
-            // 
-            this.awayteamToolStripMenuItem.Name = "awayteamToolStripMenuItem";
-            this.awayteamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.awayteamToolStripMenuItem.Text = "Away Team";
+            this.tableLayoutPanel1.SetColumnSpan(this.kickoff_button, 2);
+            this.kickoff_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kickoff_button.Location = new System.Drawing.Point(203, 403);
+            this.kickoff_button.Name = "kickoff_button";
+            this.kickoff_button.Size = new System.Drawing.Size(394, 30);
+            this.kickoff_button.TabIndex = 3;
+            this.kickoff_button.Text = "Kickoff";
+            this.kickoff_button.UseVisualStyleBackColor = true;
+            this.kickoff_button.Visible = false;
+            this.kickoff_button.Click += new System.EventHandler(this.kickoff_button_Click);
             // 
             // Form1
             // 
@@ -507,8 +508,8 @@
         private System.Windows.Forms.GroupBox teamselect_groupbox;
         private System.Windows.Forms.ComboBox away_combo;
         private System.Windows.Forms.ComboBox home_combo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label homelabel;
+        private System.Windows.Forms.Label away_label;
+        private System.Windows.Forms.Label home_label;
         private System.Windows.Forms.GroupBox coinflip_groupbox;
         private System.Windows.Forms.RadioButton tails_radio;
         private System.Windows.Forms.RadioButton heads_radio;

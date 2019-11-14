@@ -36,10 +36,10 @@ namespace Football_Winforms
         private static string hometeam;
         private static string awayteam;
 
-        private void whichchoice_label_Click(object sender, EventArgs e)
-        {
+        //private void whichchoice_label_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void flip_button_Click(object sender, EventArgs e)
         {
@@ -66,6 +66,7 @@ namespace Football_Winforms
                 hometeamselected = true;
                 hometeam = (string)home_combo.SelectedItem;
             }
+            else hometeamselected = false;
         }
 
         private void away_combo_SelectedIndexChanged(object sender, EventArgs e)
@@ -75,6 +76,7 @@ namespace Football_Winforms
                 awayteamselected = true;
                 awayteam = (string)away_combo.SelectedItem;
             }
+            else awayteamselected = false;
         }
 
         private void heads_radio_CheckedChanged(object sender, EventArgs e)
@@ -117,49 +119,57 @@ namespace Football_Winforms
                 winnerselect_statement = String.Concat(hometeam, winnerselect_statement);
                 winnerselect_label.Text = winnerselect_statement;
             }
-                //var possession_index = rand.Next(possession_options.Length);
-                //var winner_choice = possession_options[possession_index];
+            //var possession_index = rand.Next(possession_options.Length);
+            //var winner_choice = possession_options[possession_index];
 
-                //Console.Write("Visitor chooses {0}. ", visitor_coin_flip);
-                //Console.Write("The coin lands on {0}. ", flip_result);
+            //Console.Write("Visitor chooses {0}. ", visitor_coin_flip);
+            //Console.Write("The coin lands on {0}. ", flip_result);
 
-                //if (visitor_coin_flip == flip_result)
-                //{
-                //    Console.WriteLine("Visitor chooses to {0}.", winner_choice);
-                //    if (winner_choice == "Receive")
-                //    {
-                //        awayteam.FirstHalfPossession = true;
-                //        awayteam.SecondHalfPossession = false;
-                //        hometeam.FirstHalfPossession = false;
-                //        hometeam.SecondHalfPossession = true;
-                //    }
-                //    else if (winner_choice == "Kick" || winner_choice == "Defer")
-                //    {
-                //        awayteam.FirstHalfPossession = false;
-                //        awayteam.SecondHalfPossession = true;
-                //        hometeam.FirstHalfPossession = true;
-                //        hometeam.SecondHalfPossession = false;
-                //    }
-                //}
-                //else
-                //{
-                //    Console.WriteLine("Home team chooses to {0}.", winner_choice);
-                //if (winner_choice == "Receive")
-                //{
-                //    awayteam.FirstHalfPossession = false;
-                //    awayteam.SecondHalfPossession = true;
-                //    hometeam.FirstHalfPossession = true;
-                //    hometeam.SecondHalfPossession = false;
-                //}
-                //else if (winner_choice == "Kick" || winner_choice == "Defer")
-                //{
-                //    awayteam.FirstHalfPossession = true;
-                //    awayteam.SecondHalfPossession = false;
-                //    hometeam.FirstHalfPossession = false;
-                //    hometeam.SecondHalfPossession = true;
+            //if (visitor_coin_flip == flip_result)
+            //{
+            //    Console.WriteLine("Visitor chooses to {0}.", winner_choice);
+            //    if (winner_choice == "Receive")
+            //    {
+            //        awayteam.FirstHalfPossession = true;
+            //        awayteam.SecondHalfPossession = false;
+            //        hometeam.FirstHalfPossession = false;
+            //        hometeam.SecondHalfPossession = true;
+            //    }
+            //    else if (winner_choice == "Kick" || winner_choice == "Defer")
+            //    {
+            //        awayteam.FirstHalfPossession = false;
+            //        awayteam.SecondHalfPossession = true;
+            //        hometeam.FirstHalfPossession = true;
+            //        hometeam.SecondHalfPossession = false;
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Home team chooses to {0}.", winner_choice);
+            //if (winner_choice == "Receive")
+            //{
+            //    awayteam.FirstHalfPossession = false;
+            //    awayteam.SecondHalfPossession = true;
+            //    hometeam.FirstHalfPossession = true;
+            //    hometeam.SecondHalfPossession = false;
+            //}
+            //else if (winner_choice == "Kick" || winner_choice == "Defer")
+            //{
+            //    awayteam.FirstHalfPossession = true;
+            //    awayteam.SecondHalfPossession = false;
+            //    hometeam.FirstHalfPossession = false;
+            //    hometeam.SecondHalfPossession = true;
 
-                //}
-                //}
-            }
+            //}
+            //}
+        }
+
+        private void kickoff_button_Click(object sender, EventArgs e)
+        {
+            this.tableLayoutPanel1.Hide();
+            string message = "The simulation is underway. Please use the Matchup menu at the top to view the results";
+            MessageBox.Show(message);
+            // run sim
+        }
     }
 }
