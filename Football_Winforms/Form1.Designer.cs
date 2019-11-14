@@ -48,21 +48,31 @@
             this.visitorselects_label = new System.Windows.Forms.Label();
             this.flip_button = new System.Windows.Forms.Button();
             this.kickoff_button = new System.Windows.Forms.Button();
-            this.winnerselection_group = new System.Windows.Forms.GroupBox();
-            this.comma_label = new System.Windows.Forms.Label();
-            this.whichchoice_label = new System.Windows.Forms.Label();
-            this.coinlandson_label = new System.Windows.Forms.Label();
-            this.headsortails_label = new System.Windows.Forms.Label();
-            this.winner_label = new System.Windows.Forms.Label();
+            this.coinflipresult_group = new System.Windows.Forms.GroupBox();
             this.defer_radio = new System.Windows.Forms.RadioButton();
             this.kickoff_radio = new System.Windows.Forms.RadioButton();
             this.receive_radio = new System.Windows.Forms.RadioButton();
-            this.period_label = new System.Windows.Forms.Label();
+            this.winnerselect_group = new System.Windows.Forms.GroupBox();
+            this.winnerselect_label = new System.Windows.Forms.Label();
+            this.flipresult_label = new System.Windows.Forms.Label();
+            this.playsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.playsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.playsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.playsToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statsToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.hometeamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.awayteamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.teamselect_groupbox.SuspendLayout();
             this.coinflip_groupbox.SuspendLayout();
-            this.winnerselection_group.SuspendLayout();
+            this.coinflipresult_group.SuspendLayout();
+            this.winnerselect_group.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -90,38 +100,56 @@
             // 
             // firstToolStripMenuItem
             // 
+            this.firstToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playsToolStripMenuItem,
+            this.statsToolStripMenuItem});
             this.firstToolStripMenuItem.Name = "firstToolStripMenuItem";
-            this.firstToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.firstToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.firstToolStripMenuItem.Text = "First";
             // 
             // secondToolStripMenuItem
             // 
+            this.secondToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playsToolStripMenuItem1,
+            this.statsToolStripMenuItem1});
             this.secondToolStripMenuItem.Name = "secondToolStripMenuItem";
-            this.secondToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.secondToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.secondToolStripMenuItem.Text = "Second";
             // 
             // thirdToolStripMenuItem
             // 
+            this.thirdToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playsToolStripMenuItem2,
+            this.statsToolStripMenuItem2});
             this.thirdToolStripMenuItem.Name = "thirdToolStripMenuItem";
-            this.thirdToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.thirdToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.thirdToolStripMenuItem.Text = "Third";
             // 
             // fourthToolStripMenuItem
             // 
+            this.fourthToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playsToolStripMenuItem3,
+            this.statsToolStripMenuItem3});
             this.fourthToolStripMenuItem.Name = "fourthToolStripMenuItem";
-            this.fourthToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.fourthToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fourthToolStripMenuItem.Text = "Fourth";
             // 
             // completeToolStripMenuItem
             // 
+            this.completeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playsToolStripMenuItem4,
+            this.statsToolStripMenuItem4});
             this.completeToolStripMenuItem.Name = "completeToolStripMenuItem";
-            this.completeToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.completeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.completeToolStripMenuItem.Text = "Complete";
             // 
             // gameStatsToolStripMenuItem
             // 
+            this.gameStatsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hometeamToolStripMenuItem,
+            this.awayteamToolStripMenuItem});
             this.gameStatsToolStripMenuItem.Name = "gameStatsToolStripMenuItem";
-            this.gameStatsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.gameStatsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gameStatsToolStripMenuItem.Text = "Game Stats";
             // 
             // tableLayoutPanel1
@@ -134,18 +162,20 @@
             this.tableLayoutPanel1.Controls.Add(this.teamselect_groupbox, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.coinflip_groupbox, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.flip_button, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.coinflipresult_group, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.winnerselect_group, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.kickoff_button, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.winnerselection_group, 0, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 27);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 421);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 459);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // teamselect_groupbox
@@ -158,26 +188,32 @@
             this.teamselect_groupbox.Location = new System.Drawing.Point(3, 3);
             this.teamselect_groupbox.Name = "teamselect_groupbox";
             this.tableLayoutPanel1.SetRowSpan(this.teamselect_groupbox, 2);
-            this.teamselect_groupbox.Size = new System.Drawing.Size(394, 162);
+            this.teamselect_groupbox.Size = new System.Drawing.Size(394, 176);
             this.teamselect_groupbox.TabIndex = 0;
             this.teamselect_groupbox.TabStop = false;
             this.teamselect_groupbox.Text = "Team Selection";
             // 
             // away_combo
             // 
+            this.away_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.away_combo.FormattingEnabled = true;
-            this.away_combo.Location = new System.Drawing.Point(187, 91);
+            this.away_combo.Location = new System.Drawing.Point(187, 87);
             this.away_combo.Name = "away_combo";
-            this.away_combo.Size = new System.Drawing.Size(137, 21);
+            this.away_combo.Size = new System.Drawing.Size(137, 28);
             this.away_combo.TabIndex = 3;
+            this.away_combo.Text = "Away Team";
+            this.away_combo.SelectedIndexChanged += new System.EventHandler(this.away_combo_SelectedIndexChanged);
             // 
             // home_combo
             // 
+            this.home_combo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.home_combo.FormattingEnabled = true;
-            this.home_combo.Location = new System.Drawing.Point(187, 57);
+            this.home_combo.Location = new System.Drawing.Point(187, 55);
             this.home_combo.Name = "home_combo";
-            this.home_combo.Size = new System.Drawing.Size(137, 21);
+            this.home_combo.Size = new System.Drawing.Size(137, 28);
             this.home_combo.TabIndex = 2;
+            this.home_combo.Text = "Home Team";
+            this.home_combo.SelectedIndexChanged += new System.EventHandler(this.home_combo_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -208,7 +244,7 @@
             this.coinflip_groupbox.Location = new System.Drawing.Point(403, 3);
             this.coinflip_groupbox.Name = "coinflip_groupbox";
             this.tableLayoutPanel1.SetRowSpan(this.coinflip_groupbox, 2);
-            this.coinflip_groupbox.Size = new System.Drawing.Size(394, 162);
+            this.coinflip_groupbox.Size = new System.Drawing.Size(394, 176);
             this.coinflip_groupbox.TabIndex = 1;
             this.coinflip_groupbox.TabStop = false;
             this.coinflip_groupbox.Text = "Coin Flip ";
@@ -224,6 +260,7 @@
             this.tails_radio.TabStop = true;
             this.tails_radio.Text = "Tails";
             this.tails_radio.UseVisualStyleBackColor = true;
+            this.tails_radio.CheckedChanged += new System.EventHandler(this.tails_radio_CheckedChanged);
             // 
             // heads_radio
             // 
@@ -236,6 +273,7 @@
             this.heads_radio.TabStop = true;
             this.heads_radio.Text = "Heads";
             this.heads_radio.UseVisualStyleBackColor = true;
+            this.heads_radio.CheckedChanged += new System.EventHandler(this.heads_radio_CheckedChanged);
             // 
             // visitorselects_label
             // 
@@ -251,9 +289,9 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.flip_button, 2);
             this.flip_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flip_button.Location = new System.Drawing.Point(203, 171);
+            this.flip_button.Location = new System.Drawing.Point(203, 185);
             this.flip_button.Name = "flip_button";
-            this.flip_button.Size = new System.Drawing.Size(394, 36);
+            this.flip_button.Size = new System.Drawing.Size(394, 30);
             this.flip_button.TabIndex = 2;
             this.flip_button.Text = "Flip the Coin";
             this.flip_button.UseVisualStyleBackColor = true;
@@ -263,91 +301,32 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.kickoff_button, 2);
             this.kickoff_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kickoff_button.Location = new System.Drawing.Point(203, 381);
+            this.kickoff_button.Location = new System.Drawing.Point(203, 403);
             this.kickoff_button.Name = "kickoff_button";
-            this.kickoff_button.Size = new System.Drawing.Size(394, 37);
+            this.kickoff_button.Size = new System.Drawing.Size(394, 30);
             this.kickoff_button.TabIndex = 3;
             this.kickoff_button.Text = "Kickoff";
             this.kickoff_button.UseVisualStyleBackColor = true;
             this.kickoff_button.Visible = false;
             // 
-            // winnerselection_group
+            // coinflipresult_group
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.winnerselection_group, 4);
-            this.winnerselection_group.Controls.Add(this.period_label);
-            this.winnerselection_group.Controls.Add(this.comma_label);
-            this.winnerselection_group.Controls.Add(this.whichchoice_label);
-            this.winnerselection_group.Controls.Add(this.coinlandson_label);
-            this.winnerselection_group.Controls.Add(this.headsortails_label);
-            this.winnerselection_group.Controls.Add(this.winner_label);
-            this.winnerselection_group.Controls.Add(this.defer_radio);
-            this.winnerselection_group.Controls.Add(this.kickoff_radio);
-            this.winnerselection_group.Controls.Add(this.receive_radio);
-            this.winnerselection_group.Location = new System.Drawing.Point(3, 213);
-            this.winnerselection_group.Name = "winnerselection_group";
-            this.tableLayoutPanel1.SetRowSpan(this.winnerselection_group, 2);
-            this.winnerselection_group.Size = new System.Drawing.Size(794, 162);
-            this.winnerselection_group.TabIndex = 4;
-            this.winnerselection_group.TabStop = false;
-            this.winnerselection_group.Text = "Winner Selection";
-            this.winnerselection_group.Visible = false;
-            // 
-            // comma_label
-            // 
-            this.comma_label.AutoSize = true;
-            this.comma_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comma_label.Location = new System.Drawing.Point(406, 70);
-            this.comma_label.Name = "comma_label";
-            this.comma_label.Size = new System.Drawing.Size(13, 20);
-            this.comma_label.TabIndex = 7;
-            this.comma_label.Text = ",";
-            // 
-            // whichchoice_label
-            // 
-            this.whichchoice_label.AutoSize = true;
-            this.whichchoice_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.whichchoice_label.Location = new System.Drawing.Point(257, 92);
-            this.whichchoice_label.Name = "whichchoice_label";
-            this.whichchoice_label.Size = new System.Drawing.Size(162, 20);
-            this.whichchoice_label.TabIndex = 6;
-            this.whichchoice_label.Text = "which will you choose:";
-            this.whichchoice_label.Click += new System.EventHandler(this.whichchoice_label_Click);
-            // 
-            // coinlandson_label
-            // 
-            this.coinlandson_label.AutoSize = true;
-            this.coinlandson_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.coinlandson_label.Location = new System.Drawing.Point(257, 52);
-            this.coinlandson_label.Name = "coinlandson_label";
-            this.coinlandson_label.Size = new System.Drawing.Size(137, 20);
-            this.coinlandson_label.TabIndex = 5;
-            this.coinlandson_label.Text = "The coin lands on:";
-            // 
-            // headsortails_label
-            // 
-            this.headsortails_label.AutoSize = true;
-            this.headsortails_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.headsortails_label.Location = new System.Drawing.Point(257, 72);
-            this.headsortails_label.Name = "headsortails_label";
-            this.headsortails_label.Size = new System.Drawing.Size(41, 20);
-            this.headsortails_label.TabIndex = 4;
-            this.headsortails_label.Text = "Tails";
-            // 
-            // winner_label
-            // 
-            this.winner_label.AutoSize = true;
-            this.winner_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winner_label.Location = new System.Drawing.Point(315, 72);
-            this.winner_label.Name = "winner_label";
-            this.winner_label.Size = new System.Drawing.Size(94, 20);
-            this.winner_label.TabIndex = 3;
-            this.winner_label.Text = "Buccaneers";
+            this.tableLayoutPanel1.SetColumnSpan(this.coinflipresult_group, 2);
+            this.coinflipresult_group.Controls.Add(this.flipresult_label);
+            this.coinflipresult_group.Location = new System.Drawing.Point(3, 221);
+            this.coinflipresult_group.Name = "coinflipresult_group";
+            this.tableLayoutPanel1.SetRowSpan(this.coinflipresult_group, 2);
+            this.coinflipresult_group.Size = new System.Drawing.Size(394, 176);
+            this.coinflipresult_group.TabIndex = 4;
+            this.coinflipresult_group.TabStop = false;
+            this.coinflipresult_group.Text = "Coin Flip Result";
+            this.coinflipresult_group.Visible = false;
             // 
             // defer_radio
             // 
             this.defer_radio.AutoSize = true;
             this.defer_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.defer_radio.Location = new System.Drawing.Point(454, 107);
+            this.defer_radio.Location = new System.Drawing.Point(201, 109);
             this.defer_radio.Name = "defer_radio";
             this.defer_radio.Size = new System.Drawing.Size(67, 24);
             this.defer_radio.TabIndex = 2;
@@ -359,7 +338,7 @@
             // 
             this.kickoff_radio.AutoSize = true;
             this.kickoff_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kickoff_radio.Location = new System.Drawing.Point(454, 68);
+            this.kickoff_radio.Location = new System.Drawing.Point(201, 70);
             this.kickoff_radio.Name = "kickoff_radio";
             this.kickoff_radio.Size = new System.Drawing.Size(75, 24);
             this.kickoff_radio.TabIndex = 1;
@@ -371,7 +350,7 @@
             // 
             this.receive_radio.AutoSize = true;
             this.receive_radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.receive_radio.Location = new System.Drawing.Point(454, 32);
+            this.receive_radio.Location = new System.Drawing.Point(201, 34);
             this.receive_radio.Name = "receive_radio";
             this.receive_radio.Size = new System.Drawing.Size(84, 24);
             this.receive_radio.TabIndex = 0;
@@ -379,21 +358,119 @@
             this.receive_radio.Text = "Receive";
             this.receive_radio.UseVisualStyleBackColor = true;
             // 
-            // period_label
+            // winnerselect_group
             // 
-            this.period_label.AutoSize = true;
-            this.period_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.period_label.Location = new System.Drawing.Point(296, 72);
-            this.period_label.Name = "period_label";
-            this.period_label.Size = new System.Drawing.Size(13, 20);
-            this.period_label.TabIndex = 8;
-            this.period_label.Text = ".";
+            this.tableLayoutPanel1.SetColumnSpan(this.winnerselect_group, 2);
+            this.winnerselect_group.Controls.Add(this.winnerselect_label);
+            this.winnerselect_group.Controls.Add(this.defer_radio);
+            this.winnerselect_group.Controls.Add(this.kickoff_radio);
+            this.winnerselect_group.Controls.Add(this.receive_radio);
+            this.winnerselect_group.Location = new System.Drawing.Point(403, 221);
+            this.winnerselect_group.Name = "winnerselect_group";
+            this.tableLayoutPanel1.SetRowSpan(this.winnerselect_group, 2);
+            this.winnerselect_group.Size = new System.Drawing.Size(394, 176);
+            this.winnerselect_group.TabIndex = 5;
+            this.winnerselect_group.TabStop = false;
+            this.winnerselect_group.Text = "Winner Selection";
+            this.winnerselect_group.Visible = false;
+            // 
+            // winnerselect_label
+            // 
+            this.winnerselect_label.AutoSize = true;
+            this.winnerselect_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winnerselect_label.Location = new System.Drawing.Point(26, 72);
+            this.winnerselect_label.Name = "winnerselect_label";
+            this.winnerselect_label.Size = new System.Drawing.Size(144, 20);
+            this.winnerselect_label.TabIndex = 3;
+            this.winnerselect_label.Text = "Buccaneers select:";
+            // 
+            // flipresult_label
+            // 
+            this.flipresult_label.AutoSize = true;
+            this.flipresult_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flipresult_label.Location = new System.Drawing.Point(41, 72);
+            this.flipresult_label.Name = "flipresult_label";
+            this.flipresult_label.Size = new System.Drawing.Size(185, 20);
+            this.flipresult_label.TabIndex = 0;
+            this.flipresult_label.Text = "The coin lands on heads.";
+            // 
+            // playsToolStripMenuItem
+            // 
+            this.playsToolStripMenuItem.Name = "playsToolStripMenuItem";
+            this.playsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.playsToolStripMenuItem.Text = "Plays";
+            // 
+            // statsToolStripMenuItem
+            // 
+            this.statsToolStripMenuItem.Name = "statsToolStripMenuItem";
+            this.statsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statsToolStripMenuItem.Text = "Stats";
+            // 
+            // playsToolStripMenuItem1
+            // 
+            this.playsToolStripMenuItem1.Name = "playsToolStripMenuItem1";
+            this.playsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.playsToolStripMenuItem1.Text = "Plays";
+            // 
+            // statsToolStripMenuItem1
+            // 
+            this.statsToolStripMenuItem1.Name = "statsToolStripMenuItem1";
+            this.statsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.statsToolStripMenuItem1.Text = "Stats";
+            // 
+            // playsToolStripMenuItem2
+            // 
+            this.playsToolStripMenuItem2.Name = "playsToolStripMenuItem2";
+            this.playsToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.playsToolStripMenuItem2.Text = "Plays";
+            // 
+            // statsToolStripMenuItem2
+            // 
+            this.statsToolStripMenuItem2.Name = "statsToolStripMenuItem2";
+            this.statsToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.statsToolStripMenuItem2.Text = "Stats";
+            // 
+            // playsToolStripMenuItem3
+            // 
+            this.playsToolStripMenuItem3.Name = "playsToolStripMenuItem3";
+            this.playsToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.playsToolStripMenuItem3.Text = "Plays";
+            // 
+            // statsToolStripMenuItem3
+            // 
+            this.statsToolStripMenuItem3.Name = "statsToolStripMenuItem3";
+            this.statsToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.statsToolStripMenuItem3.Text = "Stats";
+            // 
+            // playsToolStripMenuItem4
+            // 
+            this.playsToolStripMenuItem4.Name = "playsToolStripMenuItem4";
+            this.playsToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.playsToolStripMenuItem4.Text = "Plays";
+            // 
+            // statsToolStripMenuItem4
+            // 
+            this.statsToolStripMenuItem4.Name = "statsToolStripMenuItem4";
+            this.statsToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.statsToolStripMenuItem4.Text = "Stats";
+            // 
+            // hometeamToolStripMenuItem
+            // 
+            this.hometeamToolStripMenuItem.Name = "hometeamToolStripMenuItem";
+            this.hometeamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hometeamToolStripMenuItem.Text = "Home Team";
+            // 
+            // awayteamToolStripMenuItem
+            // 
+            this.awayteamToolStripMenuItem.Name = "awayteamToolStripMenuItem";
+            this.awayteamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.awayteamToolStripMenuItem.Text = "Away Team";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 487);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
@@ -407,8 +484,10 @@
             this.teamselect_groupbox.PerformLayout();
             this.coinflip_groupbox.ResumeLayout(false);
             this.coinflip_groupbox.PerformLayout();
-            this.winnerselection_group.ResumeLayout(false);
-            this.winnerselection_group.PerformLayout();
+            this.coinflipresult_group.ResumeLayout(false);
+            this.coinflipresult_group.PerformLayout();
+            this.winnerselect_group.ResumeLayout(false);
+            this.winnerselect_group.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,16 +515,25 @@
         private System.Windows.Forms.Label visitorselects_label;
         private System.Windows.Forms.Button flip_button;
         private System.Windows.Forms.Button kickoff_button;
-        private System.Windows.Forms.GroupBox winnerselection_group;
-        private System.Windows.Forms.Label comma_label;
-        private System.Windows.Forms.Label whichchoice_label;
-        private System.Windows.Forms.Label coinlandson_label;
-        private System.Windows.Forms.Label headsortails_label;
-        private System.Windows.Forms.Label winner_label;
+        private System.Windows.Forms.GroupBox coinflipresult_group;
         private System.Windows.Forms.RadioButton defer_radio;
         private System.Windows.Forms.RadioButton kickoff_radio;
         private System.Windows.Forms.RadioButton receive_radio;
-        private System.Windows.Forms.Label period_label;
+        private System.Windows.Forms.GroupBox winnerselect_group;
+        private System.Windows.Forms.Label winnerselect_label;
+        private System.Windows.Forms.ToolStripMenuItem playsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem statsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem playsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem statsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem playsToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem statsToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem playsToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem statsToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem playsToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem statsToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem hometeamToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem awayteamToolStripMenuItem;
+        private System.Windows.Forms.Label flipresult_label;
     }
 }
 
