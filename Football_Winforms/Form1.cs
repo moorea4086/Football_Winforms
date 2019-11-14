@@ -14,5 +14,10 @@ namespace Football_Winforms
         {
             InitializeComponent();
         }
+
+        private void whichchoice_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
