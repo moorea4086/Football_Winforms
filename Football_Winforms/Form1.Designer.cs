@@ -257,6 +257,7 @@
             this.flip_button.TabIndex = 2;
             this.flip_button.Text = "Flip the Coin";
             this.flip_button.UseVisualStyleBackColor = true;
+            this.flip_button.Click += new System.EventHandler(this.flip_button_Click);
             // 
             // kickoff_button
             // 
@@ -268,6 +269,7 @@
             this.kickoff_button.TabIndex = 3;
             this.kickoff_button.Text = "Kickoff";
             this.kickoff_button.UseVisualStyleBackColor = true;
+            this.kickoff_button.Visible = false;
             // 
             // winnerselection_group
             // 
@@ -288,6 +290,7 @@
             this.winnerselection_group.TabIndex = 4;
             this.winnerselection_group.TabStop = false;
             this.winnerselection_group.Text = "Winner Selection";
+            this.winnerselection_group.Visible = false;
             // 
             // comma_label
             // 
