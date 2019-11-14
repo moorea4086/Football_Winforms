@@ -16,6 +16,13 @@ namespace Football_Winforms
         {
             InitializeComponent();
 
+            /// guest form https://stackoverflow.com/questions/1351322/c-sharp-winform-forms-in-form
+            //Matchup matchup = new Matchup();
+            //matchup.TopLevel = false;
+            //Controls.Add(matchup);
+            //matchup.Show();
+            /// guest form
+
             List<string> hometeams = TeamNames.TeamNamesList();
             List<string> awayteams = TeamNames.TeamNamesList();
 
@@ -167,6 +174,10 @@ namespace Football_Winforms
         private void kickoff_button_Click(object sender, EventArgs e)
         {
             this.tableLayoutPanel1.Hide();
+            Matchup matchup = new Matchup(hometeam,awayteam);
+            matchup.TopLevel = false;
+            Controls.Add(matchup);
+            matchup.Show();
             string message = "The simulation is underway. Please use the Matchup menu at the top to view the results";
             MessageBox.Show(message);
             // run sim
